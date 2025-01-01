@@ -37,5 +37,5 @@ build/
 .DS_Store
 /cms
 /api
-/div
+/cs
 package-lock.json

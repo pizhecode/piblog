@@ -1,0 +1,21 @@
+.Title{
+    padding: 40px 0;
+}
+.TitleDemo {
+    font-size: 32px;
+   padding-bottom: 20px;
+    color: #1d1d1d;
+    position: relative; /* 为了确保伪元素相对于这个元素定位 */
+    display: inline-block; /* 确保元素宽度仅根据内容来决定 */
+}
+
+.TitleDemo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* 控制横线距离文字的垂直距离 */
+    left: 50%; /* 使横线的起点位于元素的水平中点 */
+    transform: translateX(-50%); /* 使用负的水平偏移量，使横线完全居中 */
+    width: 100px; /* 横线宽度与文字宽度相同 */
+    height: 2px; /* 横线的高度 */
+    background-color: #5d62ea; /* 横线颜色 */
+}
