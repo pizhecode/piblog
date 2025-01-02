@@ -27,9 +27,8 @@ const PizheHook = () => {
                 </ul>
             </div>
             <div>
-            <Collapse items={items} bordered={false} defaultActiveKey={['1']} /> 
+                 <Collapse items={items} bordered={false} defaultActiveKey={['1']} /> 
             </div>
-
         </div>
     </div>
     )

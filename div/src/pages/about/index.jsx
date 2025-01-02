@@ -5,6 +5,7 @@ import Headers from '@/hook/Headers'
 import Footers from '@/hook/Footers'
 
 import PizheHook from '@/hook/PizheHook'
+import APlayerHook from '@/hook/APlayer'
 export default function about() {
     return (
         <div className='AboutDemo'>
@@ -21,9 +22,15 @@ export default function about() {
             <div>
                 
             </div>
-            <div>
-                <div>
+            <div className='AboutMainCenter'>
+                <div className='left'>
                     <PizheHook></PizheHook>
+                </div>
+                <div className='right'>
+                    <div className='name'>英俊潇洒小俊俊</div>
+                    <div>
+                        <APlayerHook></APlayerHook>
+                    </div>
                 </div>
             </div>
             <Footers></Footers>

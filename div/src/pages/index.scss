@@ -254,9 +254,30 @@ a {
 }
 //关于我
 .AboutDemo{
-  .container{
-    width: 1400px;
-    margin: 0 auto;
+  background-color: #efefef;
+  .AboutMainCenter{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 80px;
+    display: flex;
+    align-items: flex-start;
+    .left{
+      margin-right: 50px;
+      background-color: #fff;
+    }
+    .right{
+      background-color: #fff;
+      width: 100%;
+      height: 888px;
+      border: 1px solid #d4d4d5;
+      padding: 14px 28px;
+      .name{
+        font-size: 24px;
+        margin: 0 0 14px;
+        text-align: center;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -264,7 +285,7 @@ a {
 
 //PizheHook
 .PizheHook{
-  width: 265.75px;
+  width: 250px;
   .Center{
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* 平滑过渡 */
     &:hover{
@@ -272,7 +293,7 @@ a {
       transform: translateY(-1px); /* 增加一点抬升效果 */
     }
     .touxiang{
-      width: 265.75px;
+      width: 250px;
     }
     .piName{
       margin: 10px 0; 
