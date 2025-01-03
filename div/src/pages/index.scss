@@ -199,7 +199,7 @@ a {
 //底部
 .FootersDemo{
     margin-top: 30px;
-    background-color: #f2f2f2;
+    background-color: #fff;
 .container {
     display: flex;
     justify-content: space-between; /* 左右两边分布 */
@@ -254,6 +254,7 @@ a {
 }
 //关于我
 .AboutDemo{
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   background-color: #efefef;
   .AboutMainCenter{
     max-width: 1200px;
@@ -268,7 +269,6 @@ a {
     .right{
       background-color: #fff;
       width: 100%;
-      height: 888px;
       border: 1px solid #d4d4d5;
       padding: 14px 28px;
       .name{
@@ -276,6 +276,46 @@ a {
         margin: 0 0 14px;
         text-align: center;
         width: 100%;
+      }
+      .AboutME{
+        color: #24292f;
+        >h3{
+          font-size: 20px;
+          padding: 10px 0;
+          border-bottom: 1px solid #d8dee4;
+        }
+        ul{
+          li{
+            list-style-type: disc;
+            margin: 15px 0 18px 14px;
+            font-style: 15px;
+          }
+        }
+      }
+      .AboutME2{
+        color: #24292f;
+        >h3{
+          font-size: 20px;
+          padding: 10px 0;
+          border-bottom: 1px solid #d8dee4;
+        }
+        ul{
+          li{
+            margin: 15px 0 18px;
+            font-style: 15px;
+          }
+          .ysjf {
+            img {
+              display: inline;
+              margin-right: 5px;
+              font-size: 0;
+              width: 17px;
+            }
+          }
+          .wxjb{
+            width: 300px;
+          }
+        }
       }
     }
   }

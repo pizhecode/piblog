@@ -23,7 +23,7 @@ const Header = () => {
               <li className={isActive('/') ? 'active' : ''}><Link className='lia' href="/">首页</Link></li>
               <li className={isActive('/archives') ? 'active' : ''}><Link className='lia' href="/archives">归档</Link></li>
               <li className={isActive('/moments') ? 'active' : ''}><Link className='lia' href="/moments">动态</Link></li>
-              <li className={isActive('/friends') ? 'active' : ''}><Link className='lia' href="/friends">朋友</Link></li>
+              {/* <li className={isActive('/friends') ? 'active' : ''}><Link className='lia' href="/friends">朋友</Link></li> */}
               <li className={isActive('/about') ? 'active' : ''}><Link className='lia' href="/about">关于我</Link></li>
             </ul>
           </nav>

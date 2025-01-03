@@ -4,12 +4,12 @@ import { Collapse } from 'antd';
     {
       key: '1',
       label: '最喜欢的动漫 📺',
-      children: '天气之子、轻音少女',
+      children: '天气之子',
     },
     {
       key: '2',
-      label: '最喜欢我的女孩子们 😍',
-      children: '天野阳菜、平泽唯、樱岛麻衣、时崎狂三、和泉纱雾',
+      label: '最喜欢😍',
+      children: '天野阳菜',
     }
   ];
 const PizheHook = () => {
@@ -27,7 +27,7 @@ const PizheHook = () => {
                 </ul>
             </div>
             <div>
-                 <Collapse items={items} bordered={false} defaultActiveKey={['1']} /> 
+                 <Collapse items={items} bordered={false}/> 
             </div>
         </div>
     </div>
