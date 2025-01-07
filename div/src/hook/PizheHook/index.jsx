@@ -8,9 +8,15 @@ import { Collapse } from 'antd';
     },
     {
       key: '2',
-      label: '最喜欢😍',
+      label: '最喜欢💓',
       children: '天野阳菜',
+    },
+    {
+      key: '3',
+      label: '自我介绍💢',
+      children: `Hi, I'm Pizhe! I am an amateur independent full stack development engineer.I'm always excited to explore new tools and techniques to enhance my skills.Infinite progress, growing together with like-minded partners.Have an amazing day!`,
     }
+    
   ];
 const PizheHook = () => {
     return (
