@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Link from 'next/link'; // 为了方便管理路由
-import { useRouter } from 'next/router';  // 导入 useRouter 钩子
+import { useRouter } from 'next/router';
+
 const Header = () => {
   const router = useRouter();  // 获取当前路由信息
-  // 判断当前页面是否是当前导航项对应的页面
-  const isActive = (path) => router.pathname === path;
+
+  // 使用 useMemo 缓存路由激活状态，只有 router.pathname 变化时才会重新计算
+  const isActive = useMemo(() => {
+    return (path) => {
+      return router.pathname == path;  // 比较当前路由与传入的路径
+    };
+  }, [router.pathname]);  // 当 router.pathname 发生变化时才重新计算
+
   // 点击图片后跳转到首页
   const btnImg = () => {
     router.push('/'); // 使用 router.push() 来进行页面跳转
   };
+
   return (
     <div className='HeadersDemo'>
       <header className="header">
@@ -21,10 +29,10 @@ const Header = () => {
           <nav className="nav">
             <ul>
               <li className={isActive('/') ? 'active' : ''}><Link className='lia' href="/">首页</Link></li>
-              <li className={isActive('/archives') ? 'active' : ''}><Link className='lia' href="/archives">归档</Link></li>
-              <li className={isActive('/moments') ? 'active' : ''}><Link className='lia' href="/moments">动态</Link></li>
-              <li className={isActive('/url') ? 'active' : ''}><Link className='lia' href="/url">URL</Link></li>
-              <li className={isActive('/about') ? 'active' : ''}><Link className='lia' href="/about">关于我</Link></li>
+              {/* <li className={isActive('/archives.html') ? 'active' : ''}><Link className='lia' href="/archives.html">归档</Link></li>
+              <li className={isActive('/moments.html') ? 'active' : ''}><Link className='lia' href="/moments.html">动态</Link></li> */}
+              <li className={isActive('/url.html') ? 'active' : ''}><Link className='lia' href="/url.html">URL</Link></li>
+              <li className={isActive('/about.html') ? 'active' : ''}><Link className='lia' href="/about.html">关于我</Link></li>
             </ul>
           </nav>
         </div>
@@ -34,4 +42,3 @@ const Header = () => {
 };
 
 export default Header;
-

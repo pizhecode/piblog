@@ -47,7 +47,7 @@ export default function about() {
                             <li>喜欢安静，但喜欢听得劲的电音，节奏控，coding 时喜欢听嗨歌，没事就跟着摇一摇🎵</li>
                             <li>博客源码、部署相关疑难杂症请在 <URLDemo url={'https://github.com/pizhecode'} name={'GitHub'}></URLDemo> 提 issue</li>
                             <li>博客主要技术栈为：<URLDemo name={'React18'}></URLDemo> +  <URLDemo name={'Golang'}></URLDemo></li>
-                            <li>因为有很多砖要搬，所以只能随缘回复啦</li>
+                            <li>因为有很多砖要搬，所以回复只能随缘</li>
                             <li className='ysjf'>
                                 <img src="image/icon/bilibili.png" alt="" />
                                 买这个域名纯粹是因为B站UP主&nbsp; <URLDemo url={'https://space.bilibili.com/946974#/'} name={'影视飓风'}></URLDemo>
