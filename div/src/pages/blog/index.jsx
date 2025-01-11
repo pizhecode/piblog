@@ -18,6 +18,8 @@ export default function archives() {
             <Headers></Headers>
             文章 blog
             <Footers></Footers>
+
+           
         </>
     )
 }

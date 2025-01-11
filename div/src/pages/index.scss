@@ -107,10 +107,10 @@ a {
   }
   
   /* 悬停时的样式 */
-  a:hover {
-    text-decoration: underline; /* 悬停时可以添加下划线，增加可交互性 */
-    color: #333;             /* 你可以自定义颜色 */
-  }
+  // a:hover {
+  //   text-decoration: underline; /* 悬停时可以添加下划线，增加可交互性 */
+  //   color: #333;             /* 你可以自定义颜色 */
+  // }
 /*
 *   每个页面样式
 */
@@ -182,7 +182,7 @@ a {
     }
   
     /* 选中时颜色变化 */
-    .nav .lia .active {
+    .nav ul.active {
       color: var(--Headers-color);
     }
   }
@@ -199,7 +199,7 @@ a {
 //底部
 .FootersDemo{
     margin-top: 30px;
-    background-color: #fff;
+    background-color: #1b1c1d;
 .container {
     display: flex;
     justify-content: space-between; /* 左右两边分布 */
@@ -213,7 +213,7 @@ a {
         cursor: pointer;
         line-height: 20px;
         font-size: 12px;
-        color: #000;
+        color: #fff;
     }
     .demo2{
         font-size: 14px;
